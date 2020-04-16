@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKBOX</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+</head>
+
+<style>
+    html {
+    height: 100%;
+    
+    
+    }
+    body {
+    height: 100%;
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    
+    }
+   img.circle{
+      
+       width: auto;
+       border-radius: 50%;
+       /* border:white */
+   }
+   /* img.mayday-circle{
+       position: relative;
+       bottom: -20%;
+       border-radius: 50%;
+
+   } */
+
+/* 上方區塊 內容區塊 下方區塊*/
+    .header {
+    background-color: white; 
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* z-index: 1; */
+  
+  
+    }  
+    .content {
+    margin-top: 60px;
+    /* background-color: blue; */
+   
+    }
+    .footer {
+    background-color: black;
+    }
+
+   /* 上方區塊 */
+    .header {
+    width: 100%;
+    
+    overflow: hidden;
+    }
+
+    .header .logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    height: 60px;
+    float: left;
+    }
+    /* 上方區塊-導覽列表 */
+    .header .menu-list-container{
+    /* background-color: blueviolet; */
+    width: 60%;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    }
+
+    .header .menu-list-container .menu-list, .header .menu-list-container .menu-item{
+    /* background-color: yellowgreen; */
+    display: inline-block;
+    font-size: larger;
+    list-style-type: none;
+    text-align: center;
+    line-height: 60px;
+    
+    } 
+
+    .header .search {
+    /* background-color: coral; */
+    /* display: inline-block; */
+    
+    width: 20%;
+    text-align: center;
+    line-height: 60px;
+    font-size: larger;
+    /* vertical-align: center; */
+    float: left;
+    }
+
+
+   /* 內容區塊 */
+   .content {
+    /* margin: 2.5%; */
+    width: 100%; 
+    
+    /* background-color: darkgoldenrod; */
+   
+    }
+    .content .blur-background-mask{
+    /* height: 316px;
+    width: 100%; */
+   
+    background-color: black;
+    }
+
+    .content .left-menu-container{
+    display: inline-block;
+    width: 30%;
+    /* background-color: #61a0f8; */
+    float: left;
+       
+   }
+   .content .right-menu-container{
+    display: inline-block;
+    width: 70%;
+    /* background-color: moccasin; */
+    
+   }
+    .col-6{
+    /* background-color: blue; */
+    display: flex;
+    flex: 0 0 50%;
+    /* max-width: 45%;
+    margin: 5px; */
+    align-content: center;
+    justify-content: center;
+
+    }
+    .col-6:hover{
+        background-color: gainsboro;
+    }
+    .col-3{
+    /* background-color:rosybrown; */
+    display: flex;
+    flex: 0 0 25%;
+    /* max-width: 25%; */
+    align-content: center;
+    justify-content: center;
+    }
+  
+
+    .content .section-title{
+    display: inline-block;
+    font-size: 18px;
+      
+    }
+    .content .left-menu-container .row, .right-menu-container .row{
+    display: flex;
+    /* background-color: darkgreen; */
+    list-style-type: none;
+    flex-wrap: wrap;
+    }
+  
+
+    .artist{
+    width: 80%;
+    height: 80%;
+    /* background-color: hotpink;  */
+    padding: 10px 0 0;
+    /* position: relative; */
+    }  
+    .cover{
+    /* background-color: gold; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 75px;
+    
+    }
+    .album-container{
+   
+    width: 80%;
+    height: 80%;
+    
+    /* background-color: darkorchid; */
+    }
+    .artist-album{
+    /* background-color: deeppink; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 178px;
+    
+    }
+    .cover-name, .album-name{
+    /* background-color: brown; */
+    text-align: center;
+    }
+   /* Footer */
+    .footer {
+    height: 397px;
+    }
+   
+</style>
+<body>
+    <div class="header">
+        
+        <div class="logo">
+            <img src=https://pkg.kfs.io/images/1.0.0/logo/kkbox-logo-blue.svg>
+        </div>
+        <div class="menu-list-container">
+            <div class="menu-list">
+                <li class="menu-item">最新</li>
+                <li class="menu-item">特別企劃</li>
+                <li class="menu-item">風雲榜</li>
+                <li class="menu-item">KK帳號</li>
+                <li class="menu-item">服務介紹</li>
+            </div>
+        </div>
+        <div class="search">search</div>
+    </div>
+
+    <div class="content">
+        <div class="blur-background-mask">
+            <!-- <div class="mayday-container"> -->
+                <img class="circle" src =https://i.kfs.io/artist/global/6651,0v9/fit/264x264.jpg>
+            <!-- </div>     -->
+        </div>
+        <div class="left-menu-container">
+            <h1 class="section-title">相關歌手</h1>
+            <div  class="row">
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a class="headshot" href="https://www.kkbox.com/tw/tc/artist/z9OPs0z6SuTu6b8B0F0OD08I-index-1.html" title="四分衛 (Quarterback)">
+                                
+                                <img class="circle" src="https://i.kfs.io/artist/global/1549,0v4/fit/300x300.jpg" alt="四分衛 (Quarterback)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/z9OPs0z6SuTu6b8B0F0OD08I-index-1.html" title="四分衛 (Quarterback)">四分衛(Quarterback)
+                            </a>
+                            
+                        </div>
+                    </div> 
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/XEq926F3vz58ro50F01Wo08J-index-1.html" title="董事長樂團 (The Chairman)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/6196,0v2/fit/300x300.jpg" alt="董事長樂團 (The Chairman)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/XEq926F3vz58ro50F01Wo08J-index-1.html" title="董事長樂團 (The Chairman)">董事長樂團(The Chairman)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/LiqrAfgBMXMG9JM0F01ta08J-index-1.html" title="脫拉庫 (TOLAKU)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/7782,0v1/fit/300x300.jpg" alt="脫拉庫 (TOLAKU)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/LiqrAfgBMXMG9JM0F01ta08J-index-1.html" title="脫拉庫 (TOLAKU)">脫拉庫 (TOLAKU)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/v1ifSmD8XkvNU4k0F01Ld08J-index-1.html" title="乱彈阿翔 (Luantan Ascent)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/5481,0v5/fit/300x300.jpg" alt="乱彈阿翔 (Luantan Ascent)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/v1ifSmD8XkvNU4k0F01Ld08J-index-1.html" title="乱彈阿翔 (Luantan Ascent)">乱彈阿翔 (Luantan Ascent)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/pmXDnwWzrwIDhmo0F098X08J-index-1.html" title="縱貫線 (SUPERBAND)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/37409,0v1/fit/300x300.jpg" alt="縱貫線 (SUPERBAND)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/pmXDnwWzrwIDhmo0F098X08J-index-1.html" title="縱貫線 (SUPERBAND)">縱貫線 (SUPERBAND)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/VGnW4JaQ5R7gOqe0F06GK08J-index-1.html" title="八三夭 (831)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/25620,0v5/fit/300x300.jpg" alt="八三夭 (831)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/VGnW4JaQ5R7gOqe0F06GK08J-index-1.html" title="八三夭 (831)">八三夭 (831)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/gimG2FvT2DbdsU50F05Fp08J-index-1.html" title="蘇打綠 (Sodagreen)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/21493,0v4/fit/300x300.jpg" alt="蘇打綠 (Sodagreen)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/gimG2FvT2DbdsU50F05Fp08J-index-1.html" title="蘇打綠 (Sodagreen)">蘇打綠 (Sodagreen)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="artist">
+                        <div class="cover">
+                            <a href="https://www.kkbox.com/tw/tc/artist/ozHoLIy-jPvlc1P0F06Sb08J-index-1.html" title="滅火器 (Fire EX.)">
+                                <img class="circle" src="https://i.kfs.io/artist/global/26407,0v7/fit/300x300.jpg" alt="滅火器 (Fire EX.)">
+                            </a>
+                        </div>
+                        <div class="cover-name">
+                            <a href="https://www.kkbox.com/tw/tc/artist/ozHoLIy-jPvlc1P0F06Sb08J-index-1.html" title="滅火器 (Fire EX.)">滅火器 (Fire EX.)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="right-menu-container">
+            <h2 class="section-title">歷年專輯</h2>
+            <div class="row">
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album" href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html">
+                            
+                            <img src="https://i.kfs.io/album/global/67775917,0v1/fit/300x300.jpg">
+                            
+                        </div>
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html" title="溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)">溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/MOOX7t-GN-sEq0F3.3r2009H-index.html">
+                                <img src="https://i.kfs.io/album/global/60046786,2v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/MOOX7t-GN-sEq0F3.3r2009H-index.html" title="玫瑰少年 (Womxnly)">玫瑰少年 (Womxnly)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/wkBnTY7dHu1kN0F3TQWq009H-index.html">
+                                <img src="https://i.kfs.io/album/global/58042422,0v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/wkBnTY7dHu1kN0F3TQWq009H-index.html" title="瘋狂世界 #MaydayBlue20th (World Crazy #MaydayBlue20th)">瘋狂世界 #MaydayBlue20th (World Crazy #MaydayBlue20th)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/gnYcI1x5xRWnr0F3JNxK009H-index.html">
+                                <img src="https://i.kfs.io/album/global/55410516,0v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/gnYcI1x5xRWnr0F3JNxK009H-index.html" title="五月天 人生無限公司 Life Live 完整收錄篇">五月天 人生無限公司 Life Live 完整收錄篇
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/ttNL7Fn1KHYfg0F3HkSz009H-index.html">
+                                <img src="https://i.kfs.io/album/global/54986559,0v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/ttNL7Fn1KHYfg0F3HkSz009H-index.html" title="五月天 人生無限公司 Life Live 好友加班篇">五月天 人生無限公司 Life Live 好友加班篇
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/Ih0mh0IytjEsF0F3G8yF009H-index.html">
+                                <img src="https://i.kfs.io/album/global/54562703,0v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/Ih0mh0IytjEsF0F3G8yF009H-index.html" title="純真 #MaydayBlue20th (INNOCENCE #MaydayBlue20th)">純真 #MaydayBlue20th (INNOCENCE #MaydayBlue20th)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/IUT79QkFA45vM0F2hNrd009H-index.html">
+                                <img src="https://i.kfs.io/album/global/45448681,0v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/IUT79QkFA45vM0F2hNrd009H-index.html" title="轉眼（2018 自傳最終章） (Final Chapter)">轉眼（2018 自傳最終章） (Final Chapter)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-3">
+                    <div class="album-container">
+                        <div class="artist-album">
+                            <a href="https://www.kkbox.com/tw/tc/album/C1UW7g3wz7OEZ0F23ZBT009H-index.html">
+                                <img src="https://i.kfs.io/album/global/34484957,1v1/fit/300x300.jpg">
+                            </a>
+                        </div>
+                    
+                        <div class="album-name">
+                            <a href="https://www.kkbox.com/tw/tc/album/C1UW7g3wz7OEZ0F23ZBT009H-index.html" title="I WILL CARRY YOU">I WILL CARRY YOU
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                
+            </div>
+        </div>
+                
+                
+       
+    </div>
+
+    <div class="footer">Footer</div>
+<!-- 
+    <header></header>
+    <nav></nav>
+    <footer></footer> -->
+</body>
+</html>
