@@ -28,7 +28,8 @@
       
        width: auto;
        border-radius: 50%;
-       /* border:white */
+      
+       
    }
    /* img.mayday-circle{
        position: relative;
@@ -49,8 +50,11 @@
   
     }  
     .content {
-    margin-top: 60px;
+    
     /* background-color: blue; */
+    /* position: fixed; */
+    width: 1100px;
+    margin: 0 auto;
    
     }
     .footer {
@@ -61,7 +65,7 @@
     .header {
     width: 100%;
     
-    overflow: hidden;
+    /* overflow: hidden; */
     }
 
     .header .logo {
@@ -75,6 +79,7 @@
     /* 上方區塊-導覽列表 */
     .header .menu-list-container{
     /* background-color: blueviolet; */
+    
     width: 60%;
     float: left;
     list-style-type: none;
@@ -83,7 +88,48 @@
     justify-content: center;
     
     }
+    .dropbtn{
+        background-color: white;
+        color: grey;
+        padding: 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        
+    }
+    .dropdown{
+        z-index: 99;
+        position: relative;
+        display: inline-block;
+        
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        /* z-index: 0; */
+        background-color: whitesmoke;
+       
+        /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0, 2); */
 
+    }
+    .dropdown-content a{
+        color: black;
+        font-size: 16px;
+        line-height: 45px;
+        /* padding: 12px 16px; */
+        /* text-decoration: red; */
+        display: block;
+        
+    }
+    .dropdown-content a:hover{background-color: white}
+    .dropdown:hover .dropdown-content{
+        display: block;
+        
+    }
+    .dropdown:hover .dropbtn{
+        /* background-color: whitesmoke; */
+    }
+    
     .header .menu-list-container .menu-list, .header .menu-list-container .menu-item{
     /* background-color: yellowgreen; */
     display: inline-block;
@@ -108,18 +154,11 @@
 
 
    /* 內容區塊 */
-   .content {
-    /* margin: 2.5%; */
-    width: 100%; 
-    
-    /* background-color: darkgoldenrod; */
-   
-    }
+  
     .content .blur-background-mask{
-    /* height: 316px;
-    width: 100%; */
-   
+    margin-top: 60px;
     background-color: black;
+    
     }
 
     .content .left-menu-container{
@@ -187,7 +226,7 @@
     
     }
     .album-container{
-   
+    
     width: 80%;
     height: 80%;
     
@@ -198,7 +237,9 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 178px;
+    
+    height: 170px;
+    width:  170px;
     
     }
     .cover-name, .album-name{
@@ -217,12 +258,25 @@
         <div class="logo">
             <img src=https://pkg.kfs.io/images/1.0.0/logo/kkbox-logo-blue.svg>
         </div>
-        <div class="menu-list-container">
+        <div class="menu-list-container">           
             <div class="menu-list">
                 <li class="menu-item">最新</li>
                 <li class="menu-item">特別企劃</li>
                 <li class="menu-item">風雲榜</li>
-                <li class="menu-item">KK帳號</li>
+                <li class="menu-item">                
+                    <div class="dropdown">
+                        <button class="dropbtn">KK帳號</button>
+                        <div class="dropdown-content">
+                            <a href="https://ssl.kkbox.com/tw/membership/account_info.php">什麼是KK帳號?</a>
+                            <a href="https://www.kkbox.com/tw/reg.php">註冊</a>
+                            <a href="https://ssl.kkbox.com/billing.php">繳費儲值</a>
+                            <a href="https://www.kkbox.com/tw/tc/info/event/index.html">會員好康</a>
+                            <a href="https://ssl.kkbox.com/member.php">會員中心</a>
+                            <a href="https://kkpoints.kkbox.com">點數中心</a>
+                        </div>
+                    </div> 
+
+                </li>
                 <li class="menu-item">服務介紹</li>
             </div>
         </div>
@@ -351,10 +405,10 @@
             <div class="row">
                 <li class="col-3">
                     <div class="album-container">
-                        <div class="artist-album" href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html">
-                            
-                            <img src="https://i.kfs.io/album/global/67775917,0v1/fit/300x300.jpg">
-                            
+                        <div class="artist-album" >
+                            <a href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html">
+                                <img src="https://i.kfs.io/album/global/67775917,0v1/fit/300x300.jpg">
+                            </a>
                         </div>
                         <div class="album-name">
                             <a href="https://www.kkbox.com/tw/tc/album/F415Na9wziArI0F42Yqh009H-index.html" title="溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)">溫柔 #MaydayBlue20th (TENDERNESS #MaydayBlue20th)
